@@ -9,7 +9,6 @@ const App = () => {
     getCurrencyApi().then(({ fx }) => {
       setFetchedData(fx);
       setAllCurrency(fx.map((fx) => fx.currency));
-      //console.log(allCurrency);
     }).catch(error => console.log(error.message));   
   }, []);
 
